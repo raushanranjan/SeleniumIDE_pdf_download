@@ -1,0 +1,60 @@
+{
+  "id": "a93c74ea-8ec6-433c-8aa1-cde0c03dbb90",
+  "version": "2.0",
+  "name": "Spice IN 2",
+  "url": "https://ntro.gov.in",
+  "tests": [{
+    "id": "4ae2a9bd-71be-4396-a92e-5b87e1352467",
+    "name": "trail 1",
+    "commands": [{
+      "id": "52e87f75-52a5-480f-8db5-1336f12e741b",
+      "comment": "",
+      "command": "open",
+      "target": "/welcome.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d7a500e-352d-4c33-bd43-5bb7495116b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1822x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22847b47-e77c-4c3c-b319-cf707abfbfc6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Recruitments",
+      "targets": [
+        ["linkText=Recruitments", "linkText"],
+        ["css=tr:nth-child(5) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Recruitments')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ntroWeb/loadRecruitmentsHome.do')]", "xpath:href"],
+        ["xpath=//tr[5]/td/center/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Recruitments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e08e7ab0-1d61-4d58-b7f2-ea4024919a4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .recLink",
+      "targets": [
+        ["css=tr:nth-child(3) .recLink", "css:finder"],
+        ["xpath=//a[contains(@href, '/ntroWeb/showRecruitmentAdvertisement.do?id=211')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8a4c2107-3ea7-4157-a71b-ab9a88c13838",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4ae2a9bd-71be-4396-a92e-5b87e1352467"]
+  }],
+  "urls": ["https://ntro.gov.in/"],
+  "plugins": []
+}
